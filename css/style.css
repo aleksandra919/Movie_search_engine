@@ -1,0 +1,69 @@
+/*
+#clean #A7D2CB;
+#butter #F2D388;
+#salmon #C98474;
+#eggplant #874C62;
+*/
+
+body {
+    background-color: #A7D2CB;
+    font-family: 'Quicksand', sans-serif;
+    color: #C98474;
+}
+
+
+.title h1 {
+    margin: 30px 0;
+}
+
+#movieNameInput {
+    width: 55%;
+    border: 3px solid #F2D388;
+    padding: 10px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    background-color: #A7D2CB;
+    margin-bottom: 8px;
+}
+.searchDiv {
+    margin-bottom: 40px;
+}
+
+#searchBtn {
+    position: absolute;
+    right: 268px;
+    width: 90px;
+    height: 50px;
+    border: 1px solid #F2D388;
+    background: #F2D388;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#searchResponse {
+    font-size: 20px;
+}
+
+#loader {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: 100px;
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #F2D388;; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
