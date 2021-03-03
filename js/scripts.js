@@ -1,6 +1,5 @@
 $('#searchBtn').click(searchMovie);
 
-
 function searchMovie() {
     $('#loader').css('display', 'block');
     document.getElementById("searchBtn").disabled = true;
@@ -17,7 +16,6 @@ function searchMovie() {
         success: showMoviesList
     });
 }
-
 
 function showMoviesList(respond) {
     var searchResponse = $("#searchResponse");
@@ -46,5 +44,3 @@ function showMoviesList(respond) {
     document.getElementById("movieNameInput").disabled = false;
     $('#loader').css('display', 'none');
 }
-
-
